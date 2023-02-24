@@ -12161,15 +12161,13 @@ body {
   background-position: center;
 }
 
-mask {
+main {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: fit-content;
   background-attachment: fixed;
   background-color: hsla(0deg, 0%, 0%, 0.6);
 }
@@ -12183,6 +12181,19 @@ mask {
 }
 #banner h1, #banner .h1 {
   border-bottom: 2px solid white;
+}
+
+section h3, section .h3 {
+  background-image: url("../img/sfondoBody.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+section img {
+  width: 200px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=index.css.map */
