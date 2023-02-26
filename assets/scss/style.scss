@@ -22,6 +22,12 @@ main {
     font-family: 'Tangerine', cursive;
 }
 
+
+nav,
+section {
+    box-shadow: 0px 3px 20px black;
+}
+
 #banner {
     font-family: 'Tangerine', cursive;
 
@@ -40,8 +46,59 @@ section {
         color: transparent;
     }
 
+    p {
+        text-align: justify;
+    }
+}
+
+#chiSono, #mindset {
     img {
         width: 200px;
         height: 200px;
+    }
+}
+
+$fotolg: 430px;
+
+.card {
+    width: 75%;
+
+    img {
+        height: (75%)/2.15;
+    }
+
+    @include media-breakpoint-up(md) {
+        width: $fotolg;
+        height: 300px;
+
+        img {
+            height: auto;
+        }
+    }
+}
+
+#foto {
+    img {
+        height: (100%)/1.33;
+        @include media-breakpoint-up(md) {
+            height: 800px;
+            width: (800px)*1.33;
+        }
+    }
+    .carousel-caption {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: fit-content;
+        background-attachment: fixed;
+        background-color: hsla(0, 0%, 0%, 0.6);
+    }
+    .stretch {
+        @include media-breakpoint-up(md) {
+            height: 800px;
+            width: (800px)*0.75;
+        }
     }
 }
