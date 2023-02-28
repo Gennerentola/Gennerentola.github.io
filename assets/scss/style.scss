@@ -25,7 +25,7 @@
     background-image: url('../img/sfondoBody.jpeg');
 }
 
-main {
+.mask {
     position: absolute;
     top: 0;
     right: 0;
@@ -42,7 +42,8 @@ main {
 
 
 nav,
-section {
+section,
+footer {
     box-shadow: 0px 3px 20px black;
 }
 
@@ -54,13 +55,16 @@ section {
     }
 }
 
-section {
+section,
+footer {
     p {
         text-align: justify;
     }
 }
 
-#chiSono, #mindset {
+#chiSono,
+#mindset,
+#contatti {
     img {
         width: 200px;
         height: 200px;
@@ -89,11 +93,13 @@ $fotolg: 430px;
 #foto {
     img {
         height: (100vw)/1.33;
+
         @include media-breakpoint-up(md) {
             height: 650px;
             width: (650px)*1.33;
         }
     }
+
     .carousel-caption {
         position: absolute;
         bottom: 0;
@@ -104,6 +110,7 @@ $fotolg: 430px;
         background-attachment: fixed;
         background-color: hsla(0, 0%, 0%, 0.6);
     }
+
     .stretch {
         @include media-breakpoint-up(md) {
             height: 650px;
