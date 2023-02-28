@@ -12155,10 +12155,25 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-image: url("../img/sfondoBody.jpeg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+
+.maratea {
+  background-image: url("../img/maratea.jpeg");
+}
+
+.monticchio {
+  background-image: url("../img/monticchioGrande.jpeg");
+}
+
+.castelSantAngelo {
+  background-image: url("../img/castelSantAngelo.jpeg");
+}
+
+.rivaLago {
+  background-image: url("../img/sfondoBody.jpeg");
 }
 
 main {
@@ -12222,12 +12237,12 @@ section p {
 }
 
 #foto img {
-  height: 75.1879699248%;
+  height: 75.1879699248vw;
 }
 @media (min-width: 768px) {
   #foto img {
-    height: 800px;
-    width: 1064px;
+    height: 650px;
+    width: 864.5px;
   }
 }
 #foto .carousel-caption {
@@ -12242,8 +12257,8 @@ section p {
 }
 @media (min-width: 768px) {
   #foto .stretch {
-    height: 800px;
-    width: 600px;
+    height: 650px;
+    width: 487.5px;
   }
 }
 

@@ -1,10 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
 body {
-    background-image: url('../img/sfondoBody.jpeg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+.maratea {
+    background-image: url('../img/maratea.jpeg');
+}
+
+.monticchio {
+    background-image: url('../img/monticchioGrande.jpeg');
+}
+
+.castelSantAngelo {
+    background-image: url('../img/castelSantAngelo.jpeg');
+}
+
+.rivaLago {
+    background-image: url('../img/sfondoBody.jpeg');
 }
 
 main {
@@ -79,10 +94,10 @@ $fotolg: 430px;
 
 #foto {
     img {
-        height: (100%)/1.33;
+        height: (100vw)/1.33;
         @include media-breakpoint-up(md) {
-            height: 800px;
-            width: (800px)*1.33;
+            height: 650px;
+            width: (650px)*1.33;
         }
     }
     .carousel-caption {
@@ -97,8 +112,8 @@ $fotolg: 430px;
     }
     .stretch {
         @include media-breakpoint-up(md) {
-            height: 800px;
-            width: (800px)*0.75;
+            height: 650px;
+            width: (650px)*0.75;
         }
     }
 }
