@@ -12203,14 +12203,6 @@ section {
   border-bottom: 2px solid white;
 }
 
-section h3, section .h3 {
-  background-image: url("../img/sfondoBody.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
 section p {
   text-align: justify;
 }
