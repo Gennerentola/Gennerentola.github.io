@@ -12154,7 +12154,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
+.maratea,
+.monticchio,
+.castelSantAngelo,
+.rivaLago {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
