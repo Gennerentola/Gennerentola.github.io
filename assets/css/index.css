@@ -12244,12 +12244,12 @@ footer p {
 
 #foto img {
   height: 75.1879699248vw;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   #foto img {
     height: 650px;
     width: 864.5px;
-    box-sizing: border-box;
   }
 }
 #foto .carousel-caption {
