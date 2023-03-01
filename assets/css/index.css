@@ -12188,7 +12188,7 @@ textarea.form-control-lg {
   height: fit-content;
   background-attachment: fixed;
   background-color: hsla(0deg, 0%, 0%, 0.6);
-  height: max-content-1px;
+  height: max-content-5px;
 }
 
 .navbar-brand {
