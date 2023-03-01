@@ -41,6 +41,12 @@
     font-family: 'Tangerine', cursive;
 }
 
+#downloadCV {
+    @include media-breakpoint-up(lg) {
+        width: 25%;
+    }
+}
+
 
 nav,
 section,

@@ -12195,6 +12195,12 @@ textarea.form-control-lg {
   font-family: "Tangerine", cursive;
 }
 
+@media (min-width: 992px) {
+  #downloadCV {
+    width: 25%;
+  }
+}
+
 nav,
 section,
 footer {
