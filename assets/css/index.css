@@ -12244,7 +12244,7 @@ footer p {
 
 #foto img {
   height: 75.1879699248vw;
-  box-sizing: border-box;
+  max-width: 100%;
 }
 @media (min-width: 768px) {
   #foto img {
