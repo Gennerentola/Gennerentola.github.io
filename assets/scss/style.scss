@@ -104,6 +104,7 @@ $fotolg: 430px;
         @include media-breakpoint-up(md) {
             height: 650px;
             width: (650px)*1.33;
+            box-sizing: border-box;
         }
     }
 

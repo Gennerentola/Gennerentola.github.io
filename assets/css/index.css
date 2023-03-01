@@ -12249,6 +12249,7 @@ footer p {
   #foto img {
     height: 650px;
     width: 864.5px;
+    box-sizing: border-box;
   }
 }
 #foto .carousel-caption {
