@@ -12218,7 +12218,6 @@ footer {
 
 #banner {
   font-family: "Tangerine", cursive;
-  height: calc(100vh - 56px);
 }
 #banner h1, #banner .h1 {
   border-bottom: 2px solid white;
