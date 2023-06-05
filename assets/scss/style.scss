@@ -28,6 +28,13 @@
     background-position: center;
 }
 
+.benevento {
+    background-image: url('../img/centroStoricoBenevento.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .mask {
     position: absolute;
     top: 0;
@@ -58,6 +65,7 @@ footer {
 
 #banner {
     font-family: 'Tangerine', cursive;
+    height: calc(100vh - 56px);
 
     h1 {
         border-bottom: 2px solid white;
@@ -86,7 +94,7 @@ $fotolg: 430px;
     width: 75%;
 
     img {
-        height: (75%)/2.15;
+        height: calc((75%)/2.15);
     }
 
     @include media-breakpoint-up(md) {
@@ -101,12 +109,12 @@ $fotolg: 430px;
 
 #foto {
     img {
-        height: (100vw)/1.33;
+        height: calc((100vw)/1.33);
         max-width: 100%;
 
         @include media-breakpoint-up(md) {
             height: 650px;
-            width: (650px)*1.33;
+            width: calc((650px)*1.33);
         }
     }
 
@@ -124,7 +132,7 @@ $fotolg: 430px;
     .stretch {
         @include media-breakpoint-up(md) {
             height: 650px;
-            width: (650px)*0.75;
+            width: calc((650px)*0.75);
         }
     }
 }

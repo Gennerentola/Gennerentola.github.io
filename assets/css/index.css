@@ -12154,29 +12154,39 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.maratea,
-.monticchio,
-.castelSantAngelo,
-.rivaLago {
+.maratea {
+  background-image: url("../img/maratea.jpeg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
-.maratea {
-  background-image: url("../img/maratea.jpeg");
-}
-
 .monticchio {
   background-image: url("../img/monticchioGrande.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .castelSantAngelo {
   background-image: url("../img/castelSantAngelo.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .rivaLago {
   background-image: url("../img/sfondoBody.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.benevento {
+  background-image: url("../img/centroStoricoBenevento.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .mask {
@@ -12188,7 +12198,6 @@ textarea.form-control-lg {
   height: fit-content;
   background-attachment: fixed;
   background-color: hsla(0deg, 0%, 0%, 0.6);
-  height: max-content-5px;
 }
 
 .navbar-brand {
@@ -12209,6 +12218,7 @@ footer {
 
 #banner {
   font-family: "Tangerine", cursive;
+  height: calc(100vh - 56px);
 }
 #banner h1, #banner .h1 {
   border-bottom: 2px solid white;
