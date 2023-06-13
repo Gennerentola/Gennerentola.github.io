@@ -4,9 +4,16 @@ const photoList = [];
 const targetProgetti = document.getElementById("targetProgetti");
 const targetCarousel = (document.getElementsByClassName("carousel-inner"))[0];
 const url = "https://portfolio-a7285-default-rtdb.europe-west1.firebasedatabase.app/";
+const loadingFeedback = document.getElementsByClassName("loadingFeedback");
+
+function removeLoading() {
+    for (let i = 0; i < loadingFeedback.length; i++) {
+        loadingFeedback[i].classList.add("d-none");
+    }
+}
 
 function dynamicBackground() {   
-    let estratto = Math.floor(Math.random() * 5);
+    let estratto = Math.floor(Math.random() * 6);
     if (estratto == 0) {
         body[0].classList.add("maratea");
     } else if (estratto == 1) {
@@ -15,8 +22,10 @@ function dynamicBackground() {
         body[0].classList.add("castelSantAngelo");
     } else if (estratto == 3) {
         body[0].classList.add("rivaLago");
-    } else {
+    } else if (estratto == 4) {
         body[0].classList.add("benevento");
+    } else {
+        body[0].classList.add("milano");
     }
 }
 
@@ -94,6 +103,7 @@ function printProjects(projectList) {
         // STAMPA NEL DOM
         targetProgetti.append(article, hr);
     }
+    removeLoading();
 }
 
 function fetchPhotos() {
@@ -136,6 +146,7 @@ function printCarousel(photoList) {
         // STAMPA NEL DOM
         targetCarousel.append(divItem);
     }
+    removeLoading();
 }
 
 function initialise() {
