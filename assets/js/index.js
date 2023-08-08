@@ -79,14 +79,14 @@ function printProjects(projectList) {
             bottoneSito.innerHTML += "SITO NON DISPONIBILE";
         } else {
             bottoneSito.setAttribute("href", project.linkSito);
-            bottoneSito.innerHTML += "VISITA IL SITO";
+            bottoneSito.innerHTML += "VAI AL SITO";
         }
         if (project.linkRepo === undefined) {
             bottoneRepo.classList.add("disabled");
             bottoneRepo.innerHTML += "REPO NON DISPONIBILE";
         } else {
             bottoneRepo.setAttribute("href", project.linkRepo);
-            bottoneRepo.innerHTML += "VISITA LA REPOSITORY";
+            bottoneRepo.innerHTML += "VAI ALLA REPOSITORY";
         }
         // COMPOSIZIONE CARD BODY
         cardBody.append(bottoneSito, bottoneRepo);
